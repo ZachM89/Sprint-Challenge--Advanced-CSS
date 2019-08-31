@@ -278,6 +278,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
+  transition: background-color 1s ease;
   display: flex;
   justify-content: center;
   align-items: center;
