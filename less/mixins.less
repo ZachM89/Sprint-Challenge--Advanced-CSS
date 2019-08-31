@@ -1,1 +1,13 @@
 // Mixins Here
+.signup-button(@backgroundcolor; @fontcolor; @borderradius; @height){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    width: 10rem;
+    height: @height;
+    background-color: @backgroundcolor;
+    color: @fontcolor;
+    border-radius: @borderradius;
+}

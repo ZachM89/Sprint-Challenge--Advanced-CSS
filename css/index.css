@@ -183,11 +183,16 @@ nav .inner-container {
 nav .inner-container .nav-section {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 55%;
   margin: 15px 0px 20px;
 }
 nav .inner-container .nav-section h1 {
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  nav .inner-container .nav-section {
+    width: 80%;
+  }
 }
 nav .inner-container .nav-section:last-child {
   display: flex;
@@ -197,7 +202,7 @@ nav .inner-container .nav-section:last-child {
 nav a {
   display: flex;
   text-decoration: none;
-  color: black;
+  color: #5E6164;
   font-size: 1.6rem;
 }
 footer {
@@ -217,6 +222,7 @@ footer {
 }
 .home .header-image img {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -234,6 +240,17 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -260,6 +277,18 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+  font-weight: bold;
+  width: 10rem;
+  height: 40px;
+  background-color: #23293B;
+  color: white;
+  border-radius: 5px;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -268,4 +297,31 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    border-top: 1px solid #dee2e6;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .home .walk .walk-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0px 0px 20px;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 80px;
+  }
 }

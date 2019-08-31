@@ -24,10 +24,13 @@ nav {
         .nav-section {
             display: flex;
             justify-content: center;
-            width: 50%;
+            width: 55%;
             margin: 15px 0px 20px;
             h1 {
                 font-size: 4rem;
+            }
+            @media @phone {
+                width: 80%;
             }
         }
         .nav-section:last-child {
@@ -42,7 +45,7 @@ nav {
     a {
         display: flex;
         text-decoration: none;
-        color: black;
+        color: @main-font-color;
         font-size: 1.6rem;
     }
 }
