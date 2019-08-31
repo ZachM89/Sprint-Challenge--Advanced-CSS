@@ -1,1 +1,47 @@
 // Navigation code here
+nav {
+    .display-properties();
+    justify-content: center;
+    border-bottom: 1px solid gainsboro;
+    background-color: @nav-bg;
+    .nav-container {
+        .display-properties();
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0px 10px;
+    }
+
+    .inner-container {
+        .display-properties();
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;  
+
+        .nav-section {
+            .display-properties();
+            justify-content: center;
+            width: 55%;
+            margin: 15px 0px 20px;
+            h1 {
+                font-size: 4rem;
+            }
+            @media @phone {
+                width: 80%;
+            }
+        }
+        .nav-section:last-child {
+            .display-properties();
+            justify-content: space-between;
+            margin: 0px 0px 10px;
+        }
+    }
+
+    a {
+        .display-properties();
+        text-decoration: none;
+        color: @nav-font;
+        font-size: 1.6rem;
+    }
+}
