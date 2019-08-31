@@ -164,7 +164,7 @@ nav {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid gainsboro;
-  background-color: whitesmoke;
+  background-color: #F6F6F6;
 }
 nav .nav-container {
   display: flex;
@@ -202,7 +202,7 @@ nav .inner-container .nav-section:last-child {
 nav a {
   display: flex;
   text-decoration: none;
-  color: #5E6164;
+  color: #454A59;
   font-size: 1.6rem;
 }
 footer {
@@ -285,9 +285,13 @@ footer {
   font-weight: bold;
   width: 10rem;
   height: 40px;
-  background-color: #23293B;
-  color: white;
+  background-color: #22283A;
+  color: #F6F7F8;
   border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
